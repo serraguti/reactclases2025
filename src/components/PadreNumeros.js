@@ -24,6 +24,16 @@ class PadreNumeros extends Component{
     render() {
         return (<div>
             <h1>Padre números</h1>
+            {
+                //CONDICIONAL IF/ELSE IF/ELSE
+                this.variable == 0 ? 
+                <h1>La variable es CERO</h1>:
+                this.variable > 0 ?
+                <h1>La variable es POSITIVA</h1>:
+                <h1>El valor es negativo</h1>
+            }
+
+
             <h3 style={{backgroundColor:"yellow"}}>
                 La suma es: {this.state.suma}
             </h3>
